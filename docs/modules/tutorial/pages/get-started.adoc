@@ -1,0 +1,61 @@
+= Getting Started with Miterra-Europe
+
+
+== Prerequisites
+
+=== For model users
+
+==== GAMS
+GAMS (General Algebraic Modeling System) is a high-level modelling system for mathematical programming and optimization. The Miterra-Europe model is written in the GAMS language, and requires a GAMS runtime to operate. Download and install the latest GAMS release from icon:external-link-square[] https://www.gams.com/download/[^].
+
+A licence is required to run the GAMS software. The paid licence includes extra options, such as the use of solvers, which is not needed by Miterra-Europe. The free demo licence is recommended for regular use, which must be renewed every 5 months. The renewal can be done by downloading and installing the latest version of GAMS. See icon:external-link-square[] https://www.gams.com/sales/licensing/[^] for more information about licensing.
+
+==== GAMS Studio
+GAMS Studio is bundled with the official GAMS release (no need for separate installation), and provides basic functionality for writing and running GAMS code. GAMS Studio also includes features that are useful for debugging the code.
+
+
+=== For model developers
+
+==== GTree
+GTree is a code editor for the GAMS language developed internally at Wageningen University & Research. GTree provides a set of useful features for the GAMS language, especially the treeview for model codes, which is extremely helpful for viewing Miterra-Europe structure. GTree has not been updated since 2015, however, the last version is still operable on the latest Windows 11. GTree may be downloaded from icon:github[] https://github.com/SSM-WEnR/gams-tools-gtree[SSM-WEnR/gams-tools-gtree^] (permission required).
+
+==== Git
+Git is a distributed version control system. It is used to manage the source code of Miterra-Europe. For beginners, We recommend using a Git client with a graphical user interface (GUI), such as icon:external-link-square[] https://www.sourcetreeapp.com/[SourceTree^].
+
+For more experienced users, a command line interface (CLI) can often help streamline the workflow, such as icon:external-link-square[] https://git-scm.com/downloads[the official Git CLI^]. After installation, open the terminal and type `git --version` to check if the installation was successful.
+
+
+== Install Miterra-Europe
+
+The source code of Miterra-Europe is hosted on GitHub as a *private* repository (icon:github[] https://github.com/SSM-WEnR/miterra-model-europe[SSM-WEnR/miterra-model-europe^]). Make sure you have the necessary privilege to access the repository.
+
+=== For model users (no Git tracking)
+If you simply want to run the model and examine the output, you can download the repository as a zip file and extract it to a directory of your choice.
+
+image::download-miterra-repo.png[align="left"]
+
+
+=== For model developers (with Git tracking)
+Git tracking keeps a reference of your local copy to the original remote repository. For model developers, this allows you to keep track of your changes and to submit them to the original repository.
+
+To clone the repository to your local machine, open the terminal, change the current directory to where you want to place the project, and type:
+
+[source,bash]
+----
+git clone https://github.com/SSM-WEnR/miterra-model-europe.git
+----
+
+This will create a new directory named `miterra-model-europe` and download the repository to that directory.
+
+
+== Run the Model
+Launch GTree or GAMS Studio, from the menu bar, select menu:File[Open], and open the `miterra-model-europe/source/Miterra_Europa.gms` file.
+
+Press kbd:[F9] to run the model.
+
+[TIP.debug]
+====
+When using GTree, if you get the error message "`GAMS program not found`", you need to manually select the GAMS version from menu menu:GAMS[Find GAMS versions], choose the directory where GAMS is installed, and click btn:[Find].
+
+image::find-gams-version.png[align="left"]
+====

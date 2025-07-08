@@ -1,0 +1,66 @@
+= Using Sourcetree
+
+
+== Installation
+
+
+== Add a GitHub account
+The source code and documentation for Miterra are hosted on icon:github[] GitHub.com, therefore you need a GitHub account to access these resources. If you do not have one yet, you can create one at https://github.com/signup[^].
+
+In Sourcetree, click on menu menu:Tools[Options]. In the _Options_ dialog, go to the *Authentication* page.
+
+image::sourcetree-auth-add.png[align="left"]
+
+<1> Click btn:[Add] to open the _Edit Hosting Account_ dialog.
+
+<2> Choose "GitHub" for _Hosting Service_.
+
+<3> Choose "HTTPS" for _Preferred Protocol_.
+
+<4> Choose "OAuth" for _Authentication_.
+
+<5> Click btn:[Refresh OAuth Token]. The login page for GitHub.com will open in your browser. Log into your account on GitHub, and return to Sourcetree.
+
+<6> If the login is successful, you will see the message "Authentication OK" here.
+
+<7> Click btn:[OK] to close the dialog.
+
+'''
+You can set the newly added GitHub account as default, which means that Sourcetree uses these credentials (the username and password) to access GitHub services when no username is specified.
+
+image::sourcetree-auth-default.png[align="left"]
+
+<1> In the _Accounts_ list, click your account name to expand it, and then click btn:[Set as default]. If asked to confirm, click btn:[Yes].
+
+
+== Clone a Repository
+Resources on GitHub are saved in containers called _repositories_ (or _repo_ for short). Before you can use a repository on GitHub (the _remote repository_), you need to download it to your local computer &mdash; a process called _clone_.
+
+image::sourcetree-remote.png[align="left"]
+
+<1> Click btn:[Remote] in the toolbar.
+
+<2> You should see your GitHub account name on the left, and a list of remote repositories from GitHub you can access on the right. Make sure that the *Show Organization Repos* checkbox is checked, and use the search box to help locate the repository you want to clone.
+
+<3> Once you find the repository, click btn:[Clone] next to its name.
+
+'''
+
+image::sourcetree-clone.png[align="left"]
+
+<1> The address to the remote repository should be filled automatically.
+
+<2> Click btn:[Browse] to select the directory on your computer where you want to save the repository.
+
+<3> Give the repository a name to help identify it. By default, this is the same as the name of the remote repository.
+
+<4> Click btn:[Clone] to start cloning the repository.
+
+
+== Make and commit changes
+After cloning is complete,
+
+To edit a file in the repository, you can go to the directory.
+
+
+== Push commits to GitHub

@@ -1,0 +1,2 @@
+* link:https://lunrjs.com/guides/searching.html[icon:search[flip=horizontal, role=auto] How to Use Search, window=_blank]
+* xref:miterra-docs:about:about.adoc[]
