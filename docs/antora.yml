@@ -1,0 +1,6 @@
+name: miterra-tutorial
+version: ~
+title: Miterra Tutorial
+nav:
+- modules/tutorial/nav-tutorial.adoc
+- modules/ROOT/nav-root.adoc

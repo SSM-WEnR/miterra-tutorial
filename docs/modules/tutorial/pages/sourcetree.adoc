@@ -1,0 +1,54 @@
+= Getting Started with Sourcetree
+:page-pagination!:
+
+
+
+== Installation
+
+
+== Authentication
+In the menu bar, click menu:Tools[Options]. In the _Options_ dialog, go to the *Authentication* page.
+
+image::sourcetree-auth-add.png[align="left"]
+
+<1> Click *Add* to open the _Edit Hosting Account_ dialog.
+
+<2> Choose "GitHub" for _Hosting Service_.
+
+<3> Choose "HTTPS" for _Preferred Protocal_.
+
+<4> Choose "OAuth" for _Authentication_.
+
+<5> Click R**efresh OAuth Token**. The login page for GitHub.com will open in your browser. Log into your account on GitHub, and return to Sourcetree.
+
+<6> If the login is successful, you will see the message "Authentication OK" here.
+
+<7> Click btn:[OK] to close the dialog.
+
+'''
+
+image::sourcetree-auth-default.png[align="left"]
+
+<1> In the _Accounts_ list, click on your account name to expand it, and then click *Set as default*. When asked to confirm, click on btn:[Yes].
+
+
+== Cloning a Repository
+image::sourcetree-remote.png[align="left"]
+
+<1> In the toolbar, click btn:[Remote].
+
+<2> You should see your GitHub account name on the left, and a list of remote repositories on GitHub you can access on the right. Make sure that the _Show Organization Repos_ checkbox is checked, and use the search box to help locate your repository.
+
+<3> Once you find the repository you want to clone, click *Clone* next to its name.
+
+'''
+
+image::sourcetree-clone.png[align="left"]
+
+<1> The address to the remote repository should be filled automatically.
+
+<2> Click btn:[Browse] to select the directory on your ccomputer where you want to save the repository.
+
+<3> Give the repository a name to help identify it. By default, this is the same as the name of the remote repository.
+
+<4> Click btn:[Clone] to start cloning the repository.
